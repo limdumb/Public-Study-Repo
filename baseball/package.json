@@ -1,25 +1,27 @@
 {
-  "name": "javascript-baseball-precourse",
+  "name": "javascript-baseball",
   "version": "1.0.0",
   "description": "우아한테크코스 프리코스 숫자 야구 게임 미션",
-  "dependencies": {},
+  "dependencies": {
+    "@woowacourse/mission-utils": "^1.0.6"
+  },
   "devDependencies": {
-    "cypress": "8.7.0"
+    "jest": "^29.0.3"
   },
   "scripts": {
-    "test": "cypress run --browser chrome"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/woowacourse/javascript-baseball-precourse.git"
+    "url": "git+https://github.com/woowacourse-precourse/javascript-baseball.git"
   },
   "keywords": [],
   "author": "woowacourse",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/woowacourse/javascript-baseball-precourse/issues"
+    "url": "https://github.com/woowacourse-precourse/javascript-baseball/issues"
   },
-  "homepage": "https://github.com/woowacourse/javascript-baseball-precourse#readme",
+  "homepage": "https://github.com/woowacourse-precourse/javascript-baseball#readme",
   "engineStrict": true,
   "engines": {
     "npm": ">=6.0.0",
