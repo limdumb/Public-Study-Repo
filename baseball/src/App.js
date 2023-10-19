@@ -11,7 +11,7 @@ class App {
 
     //출력한다.
     // 다시 숫자를 입력할지 게임을 끝낼 지 정한다.
-    // basball_game.outputResult();
+    basball_game.inputResult();
 
     //게임 종료. 재시작할지 완전히 끝낼지 정한다.
     // basball_game.inputIsUserRegame();

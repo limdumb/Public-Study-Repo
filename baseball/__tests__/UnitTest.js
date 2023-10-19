@@ -17,10 +17,18 @@ const mockQuestions = (answers) => {
   }, MissionUtils.Console.readLine);
 };
 
+const getLogSpy = () => {
+  const logSpy = jest.spyOn(MissionUtils.Console, "print");
+  logSpy.mockClear();
+  return logSpy;
+};
+
 describe("BaseballGame method test", () => {
-  test("inputUserNumber test", async () => {
+  test("test", () => {
     const randoms = [1, 2, 3];
-    const answers = ["456"];
+    const answers = ["356"];
+    const logSpy = getLogSpy();
+    const messages = ["1볼"];
 
     mockRandoms(randoms);
     mockQuestions(answers);
@@ -28,5 +36,11 @@ describe("BaseballGame method test", () => {
     const baseball_game = new BaseballGame();
 
     baseball_game.inputUserNumber();
+
+    baseball_game.inputResult();
+
+    messages.forEach((output) => {
+      expect(logSpy).toHaveBeenCalledWith(expect.stringContaining(output));
+    });
   });
 });
