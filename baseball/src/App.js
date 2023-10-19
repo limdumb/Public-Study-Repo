@@ -7,7 +7,7 @@ class App {
     const basball_game = new BaseballGame();
 
     //숫자를 입력한다.
-    // basball_game.inputUserNumber();
+    basball_game.inputUserNumber();
 
     //출력한다.
     // 다시 숫자를 입력할지 게임을 끝낼 지 정한다.
