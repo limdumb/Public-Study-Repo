@@ -1,10 +1,13 @@
-const BaseballGame = require('./BaseballGame');
+import { Console } from "@woowacourse/mission-utils";
+import baseBallGame from "./baseBallGame.js";
+import createRandomNumber from "./function/createRandomNumber.js";
 
 class App {
-  play() {
-    const game = new BaseballGame();
-    game.start();
+  async play() {
+    const computerValue = createRandomNumber();
+    Console.print("숫자 야구 게임을 시작합니다.");
+    return baseBallGame(computerValue);
   }
 }
 
-module.exports = App;
+export default App;
